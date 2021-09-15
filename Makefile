@@ -16,6 +16,7 @@ DEPS=Utilities.h Fibonacci.h
 fibonacci: Fibonacci.o Utilities.o
 	$(ILINK) Fibonacci.o Utilities.o -o Fibonacci.elf $(ILINKFLAGS)
 
+.PHONY: clean
 
 clean:
 	rm -f *.o *.map *.elf
